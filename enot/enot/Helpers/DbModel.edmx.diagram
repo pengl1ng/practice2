@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="adf48a49155c4b7689280143f3948030" Name="Diagram1">
+        <EntityTypeShape EntityType="DbModel.Orders" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.Roles" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.Statuses" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.Users" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="DbModel.FK_Orders_Statuses" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK_Users_Roles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbModel.Employees" Width="1.5" PointX="5.25" PointY="5.75" />
+        <AssociationConnector Association="DbModel.FK_Employees_Users" />
+        <AssociationConnector Association="DbModel.FK_Orders_Employees" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
